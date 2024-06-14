@@ -1,89 +1,36 @@
-/* filename style.css */
-:root { 
-	--primary-text-color: #27374d; 
-} 
+/* style.css */
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+.board {
+	display: inline-block;
+	margin: 20px;
+}
+.cell {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	cursor: pointer;
 
-* { 
-	box-sizing: border-box; 
-	padding: 0%; 
-	margin: 0%; 
-	font-family: "Montserrat", sans-serif; 
-	font-family: "Ubuntu", sans-serif; 
-} 
+	/* Default color for unrevealed tiles */
+	background-color: #eee;
 
-body { 
-	background-color: #dda15e; 
-	color: var(--primary-text-color); 
-	min-height: 100vh; 
-} 
+	/* Default color for unrevealed tile text */
+	color: #333;
+}
+.revealed {
+	/* Color for revealed tiles */
+	background-color: #ccc;
 
-.container { 
-	width: 400px; 
-	display: flex; 
-	flex-direction: column; 
-	align-items: center; 
-	justify-content: center; 
-	position: absolute; 
-	top: 50%; 
-	left: 50%; 
-	transform: translate(-50%, -50%); 
-} 
-
-.score { 
-	width: 100%; 
-	display: flex; 
-	align-items: center; 
-	justify-content: space-evenly; 
-	flex-wrap: wrap; 
-	font-size: 2rem; 
-	text-align: center; 
-	padding: 10px; 
-} 
-
-.score-title { 
-	width: 50%; 
-} 
-
-.score-value { 
-	width: 50%; 
-} 
-
-.result { 
-	font-size: 2rem; 
-	text-align: center; 
-	padding: 10px; 
-} 
-
-.grid { 
-	display: grid; 
-	grid-template-columns: 1fr 1fr 1fr 1fr; 
-	grid-template-rows: 1fr 1fr 1fr 1fr; 
-	width: 400px; 
-	height: 400px; 
-	background-color: rgb(209, 207, 207); 
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.753); 
-} 
-
-.grid-item { 
-	border: 1px solid var(--primary-text-color); 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-	font-size: 2rem; 
-} 
-
-.rules { 
-	border: 2px solid white; 
-	padding: 20px; 
-} 
-
-.rules>h1 { 
-	width: 100%; 
-	font-size: 2rem; 
-	text-align: center; 
-	padding: 10px; 
-} 
-
-.rules-para { 
-	padding: 20px 10px; 
+	/* Color for revealed tile text */
+	color: #000;
+}
+.mine {
+	/* Color for mines */
+	background-color: #ff3333;
 }
