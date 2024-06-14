@@ -5,8 +5,8 @@ body {
 }
 
 #board {
-    width: 2000px;
-    height: 2000px;
+    width: 1400px;
+    height: 1400px;
     border: 10px solid darkgray;
     background-color: lightgray;
 
@@ -16,8 +16,8 @@ body {
 }
 
 #board div {
-    width: 48px;
-    height: 48px;
+    width: 96px;
+    height: 96px;
     border: 1px solid whitesmoke;
 
     /* text */
